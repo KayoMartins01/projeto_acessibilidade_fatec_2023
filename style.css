@@ -1,0 +1,58 @@
+body{
+    font-family: consolas;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+hr{
+    color: #333;
+    height: 5px;
+    width: 80%;
+    background-color: #333;
+}
+
+section{
+    padding: 30px 20px;
+    font-size: 18px;
+    margin: 80px;
+}
+ol{
+    list-style: circle;
+}
+#sobre{
+    text-align: center;
+}
+
+img{
+    height: 200px;
+    border-radius: 100%;
+}
+
+.title{
+    color: #333;
+    letter-spacing: 5px;
+    text-decoration: underline;
+}
+
+.projeto{
+    margin-bottom: 20px;
+    padding: 30px 20px;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

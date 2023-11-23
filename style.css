@@ -1,5 +1,5 @@
 body{
-    font-family: consolas;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,11 +11,17 @@ header{
     text-align: center;
     padding: 20px;
 }
+button{
+    position: relative;
+    margin-left: 680px;
+}
 
 hr{
     color: #333;
     height: 5px;
     width: 80%;
+    border: none;
+    border-radius: 8px;
     background-color: #333;
 }
 
@@ -55,4 +61,13 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+.redeSocial{
+    color: #d2d2d2;
+    font-style: none;
+    font-weight: bold;
+}
+
+#logo{
+    height: 30px;
 }

@@ -4,13 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="wifth=device-width , initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Kayo Martins- Portfólio</title>
+    <script type="text/javascript">
+        function ajustaZoom() {
+            document.body.style.zoom = "150%" 
+        }
+    </script>
+    <title>Portfólio - Kayo Martins</title>
 </head>
 
-<body>
+<body onload="ajustaZoom()">
     <header>
-        <h1>Kayo Martins</h1>
+        <button onclick="zoom">Zoom</button>
+        <h1>Kayo Martins - portfolio</h1>
         <p>Desenvolvedor Web</p>
     </header>
 
@@ -20,17 +27,6 @@
             <div class="vw-plugin-top-wrapper"></div>
         </div>
     </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-        new window.VLibras.Widget({
-            rootPah: '/app',
-            personalization: 'https://vlibras.gov.br/config/default_logo.json',
-            opacity: 0.5,
-            position: 'L',
-            avatar: 'random',
-        });
-    </script>
-
     <section id="sobre">
 
         <h2 class="title">Sobre Mim</h2>
@@ -38,7 +34,9 @@
         <p>Olá, meu nome é Kayo Martins tenho 18 anos e moro em Taquaritinga - SP.</p>
         <li>Curso | Sistemas para Internet | 2ºSemestre | Manhã |</li>
     </section>
+
     <hr>
+
     <section id="academico">
         <h2 class="title">Perfil Acadêmico</h2>
         <p>Sou técnico em Informatica para internét formado pela ETEC Taquaritinga, durante meus estudos obtive
@@ -63,9 +61,31 @@
     </section>
     <hr>
     <footer>
+        <a href="https://github.com/KayoMartins01"><img id="logo" src="github.png" alt="Logo do github"></a>
+        <a class="redeSocial" href="https://github.com/KayoMartins01">KayoMartins01</a>
+
+        <a href="https://www.linkedin.com/in/kayo-martins-1511b7292/"><img id="logo" src="linkedin.png" alt="Logo do linkedin"></a>
+        <a class="redeSocial" href="https://www.linkedin.com/in/kayo-martins-1511b7292/">Kayo Martins</a>
+
         <p>&copy; 2023 Kayo Martins.</p>
     </footer>
 
-</body>
+ </body>
 
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget({
+        rootPah: '/app',
+        personalization: 'https://vlibras.gov.br/config/default_logo.json',
+        opacity: 0.5,
+        position: 'R',
+        avatar: 'random',
+    });
+
+    function zoom(){
+        let corpo = document.getElementById("corpo");
+
+        corpo.style.zoom = 2;
+    }
+</script>
 </html>
